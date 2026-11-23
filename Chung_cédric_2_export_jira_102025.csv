@@ -1,0 +1,161 @@
+Résumé,Clé de ticket,ID de ticket,Type de ticket,État,Clé de projet,Nom du projet,Type de projet,Chef de projet,ID de responsable de projet,Description du projet,Priorité,Résolution,Personne assignée,ID de la personne assignée,Rapporteur,ID de rapporteur,Créateur,ID de créateur,Création,Mise à jour,Dernier affichage,Résolu,Date d'échéance,Votes,Description,Environnement,Observateurs,ID des observateurs,Estimation originale,Estimation restante,Temps consacré,Ratio du travail réel comparé à l'estimation,Σ Estimation originale,Σ Estimation restante,Σ Temps consacré,Niveau de sécurité,Pièce jointe,Pièce jointe,Champs personnalisés (Issue color),Champs personnalisés (Rank),Champs personnalisés (Start date),Champs personnalisés (Story point estimate),Champs personnalisés (Team),Champs personnalisés (Vulnerability),Champs personnalisés (Vulnerability),Champs personnalisés (development),Catégorie d'état,Catégorie d'état modifiée
+(Event) Problèmes de responsive,SCRUM-16,10167,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,14/nov./25 11:38 AM,14/nov./25 11:47 AM,21/nov./25 2:19 PM,,,0,"Sur la page d’accueil, lorsque l’on change la vue en mobile (375 x 700)
+
+Résultat Actuel:
+
+le body ne prend que la moitié de l'écran et le cadre “notre dernière prestation” ne se resize pas.
+
+!image-20251114-104322.png|width=281,alt=""image-20251114-104322.png""!
+
+!image-20251114-104346.png|width=281,alt=""image-20251114-104346.png""!
+
+Résultat attendu:
+
+Que le body prenne toute la page et que le cadre “notre dernière prestation” se resize pour rester dans le bloc",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,14/nov./25 11:47 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251114-104322.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10137,14/nov./25 11:47 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251114-104346.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10136,,0|i0003b:,,,,,,,A faire,14/nov./25 11:38 AM
+(Accueil) Problèmes de responsive,SCRUM-15,10166,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,14/nov./25 11:21 AM,14/nov./25 11:38 AM,21/nov./25 2:19 PM,,,0,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,,,,0|i00033:,,,,,,,A faire,14/nov./25 11:21 AM
+(Event) Cartes de la webview Google maps qui ne correspond pas aux adresses envoyées par l'API,SCRUM-14,10133,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Highest,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,07/nov./25 11:54 AM,21/nov./25 11:04 AM,21/nov./25 12:14 PM,,,0,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,,,,0|i0002v:,,,,,,,A faire,07/nov./25 11:54 AM
+(Contact) Limite de 20 caractères dépassé,SCRUM-13,10132,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,High,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,07/nov./25 11:35 AM,21/nov./25 11:08 AM,21/nov./25 2:18 PM,,,0,"Sur le formulaire de contact, lorsqu’on rempli tous les champ mais qu’on dépasse les 20 caractères sur le champ “Name” et qu’on clique sur le bouton “Envoyer”
+
+Résultat actuel:
+
+Aucun message d’erreur ne s’affiche côté front, mais lorsqu’on test l’API avec Swagger on obtient un message d’erreur nous disant qu’il ne faut pas dépasser les 20 caractères.
+
+!image-20251107-105128.png|width=281,alt=""image-20251107-105128.png""!
+
+On obtient la même erreur avec le champ “surname”
+
+!image-20251107-105227.png|width=281,alt=""image-20251107-105227.png""!
+
+Résultat attendu:
+
+Avoir un message d’erreur côté front indiquant cette limitation lors de l’envoi du formulaire ou limiter l'écriture à 20 caractères dans les champs concernés.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,07/nov./25 11:53 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251107-105128.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10103,07/nov./25 11:53 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251107-105227.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10102,,0|i0002n:,,,,,,,A faire,07/nov./25 11:35 AM
+(Inscription) e400 au test d'api pour l'inscription,SCRUM-12,10101,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Highest,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,31/oct./25 3:00 PM,07/nov./25 11:48 AM,21/nov./25 2:18 PM,,,0,"Au test de l’endpoint {{http://localhost:8080/api/inscription/}} de l’api de l’app, si on envoi un formulaire complet qui est sensé être valide.
+Résultat actuel:
+
+On retrouve une erreur 400 dans la console au moment de cliquer sur “Envoyer”
+
+!image-20251107-104233.png|width=281,alt=""image-20251107-104233.png""!
+
+l’API renvoie un message d’erreur disant qu’il attend une value “number”
+
+!image-20251031-140150.png|width=281,alt=""image-20251031-140150.png""!
+
+Résultat attendu:
+
+L’API accepte une value string pour le champ “surname”
+
+Réponse Created au code 201 confirmant l’inscription.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,31/oct./25 3:02 PM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251031-140150.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10071,07/nov./25 11:48 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251107-104233.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10101,,0|i0002f:,,,,,,,A faire,31/oct./25 3:00 PM
+"(Event) ""Unhandled Thrown Error!"" au clic de ""Notre dernière préstation""",SCRUM-11,10100,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,High,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,31/oct./25 11:28 AM,31/oct./25 2:54 PM,21/nov./25 12:18 PM,,,0,"Depuis la page d’un event, en bas de la page, si on clique sur la section “Notre dernière prestation”.
+
+Résultat actuel:
+L’utilisateur est redirigé sur une page d’erreur
+
+!image-20251031-103453.png|width=281,alt=""image-20251031-103453.png""!
+
+On obtient une erreur 500 de l’api sur le endpoint {{http://localhost:8080/api/events/last}}
+
+!image-20251031-135452.png|width=281,alt=""image-20251031-135452.png""!
+
+Résultat attendu: être redirigé sur la page de l’event correspondant à ce qui était affiché dans la section “notre dernière préstation”",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,31/oct./25 11:35 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251031-103453.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10068,31/oct./25 2:54 PM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251031-135452.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10070,,0|i00027:,,,,,,,A faire,31/oct./25 11:28 AM
+(Event) Aucune redirection via la nav bar depuis une page d'event,SCRUM-10,10099,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,High,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,31/oct./25 11:20 AM,21/nov./25 11:08 AM,21/nov./25 3:18 PM,,,0,"Depuis une page d’event, en cliquant sur une des 3 slides du carrousel de la page d’accueil.
+
+Résultat actuel:
+Au clic d’un des objets de la nav bar,
+(ici cliqué sur “Notre équipe”)
+
+!image-20251031-102158.png|width=281,alt=""image-20251031-102158.png""!
+
+L’url ajoute le paramètre #notre-equipe mais l’utilisateur n’est pas correctement redirigé vers la page d’accueil qui contient cette section.
+
+
+
+Résultat attendu:
+Au clic d’un des 3 liens de la barre de navigation (Nos services, Nos réalisations, Notre équipe) depuis une page d’event, être redirigé vers la page d’accueil au niveau de la section correspondante.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,31/oct./25 11:25 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251031-102158.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10067,,,0|i0001z:,,,,,,,A faire,31/oct./25 11:20 AM
+"(Footer) Erreur de wording ""Notre derniére prestation""",SCRUM-9,10072,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 11:26 AM,31/oct./25 2:20 PM,21/nov./25 12:19 PM,,,0,"Au niveau du Footer de la page, il est actuellement écrit dans la première section “Notre derniére prestation” au lieu du résultat attendu: “Notre dernière prestation”
+
+!image-20251024-092741.png|width=281,alt=""image-20251024-092741.png""!",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 11:27 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-092741.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10042,,,0|i0001r:,,,,,,,A faire,24/oct./25 11:26 AM
+(Contact) Pas de message de succès lors de l'envoi d'un formulaire valide,SCRUM-8,10071,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Highest,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 11:19 AM,24/oct./25 11:29 AM,21/nov./25 12:18 PM,,,0,"Dans la section “Contact” lorsqu’on rempli complètement le formulaire et qu’on clique sur “Envoyer”.
+Un message de réussite est sensé s’afficher mais rien ne se passe.
+
+!image-20251024-092151.png|width=281,alt=""image-20251024-092151.png""!
+
+Au test sur Swagger on retrouve bien un succès dans la réponse : 
+
+!image-20251024-092315.png|width=281,alt=""image-20251024-092315.png""!",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 11:23 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-092151.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10040,24/oct./25 11:23 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-092315.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10041,,0|i0001j:,,,,,,,A faire,24/oct./25 11:19 AM
+(Contact) Pas de message d'erreur lors de l'envoi d'un formulaire avec 1 seul champ,SCRUM-7,10070,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 11:16 AM,21/nov./25 11:08 AM,21/nov./25 12:17 PM,,,0,"Dans la section “Contact”, lorsqu’on ne rempli qu’un seul champ, et qu’on clique sur “Envoyer”.
+
+!image-20251024-091930.png|width=281,alt=""image-20251024-091930.png""!
+
+
+On devrait avoir un message d’erreur qui s’affiche mais rien ne se passe.
+
+Au test via Swagger, on retrouve bien des erreurs dans le response body.
+
+!image-20251024-091908.png|width=281,alt=""image-20251024-091908.png""!",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 11:19 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-091908.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10038,24/oct./25 11:19 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-091930.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10039,,0|i0001b:,,,,,,,A faire,24/oct./25 11:16 AM
+(Nos réalisations) choix du filtre des catégories ne filtre pas,SCRUM-6,10069,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,High,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 11:03 AM,21/nov./25 11:08 AM,21/nov./25 12:13 PM,,,0,"Sur la section “Nos réalisations”, lors du choix d’une catégorie dans le menu défilant.
+
+Résultat actuel:
+
+On ne retrouve aucun impact sur les réalisations affichés. Aucun filtre n’est appliqué
+
+!image-20251024-090428.png|width=281,alt=""image-20251024-090428.png""!
+
+Résultat attendu:
+
+N’avoir que les réalisations correspondant au filtre sélectionné.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,31/oct./25 11:49 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-090428.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10069,,,0|i00013:,,,,,,,A faire,24/oct./25 11:03 AM
+(Nos réalisations) Page 2 des réalisation incorrecte,SCRUM-5,10068,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 10:57 AM,31/oct./25 11:47 AM,21/nov./25 12:16 PM,,,0,"La pagination 2 de la section “Nos réalisations” présente que des réalisations déjà présentes en page 1.
+
+Résultat actuel:
+Page 1 :
+
+!image-20251024-085941.png|width=281,alt=""image-20251024-085941.png""!
+
+Page 2 :
+
+!image-20251024-090006.png|width=281,alt=""image-20251024-090006.png""!
+
+On peut voir qu'à part “Méga event”, on ne retrouve aucun changement.
+
+
+
+Résultat attendu:
+
+Voir de nouvelles réalisations sur la page 2.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 11:00 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-085941.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10036,24/oct./25 11:00 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-090006.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10037,,0|i0000v:,,,,,,,A faire,24/oct./25 10:57 AM
+(Nos services) Titre incorrecte,SCRUM-4,10067,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 10:51 AM,31/oct./25 11:46 AM,21/nov./25 12:16 PM,,,0,"Dans le section “Nos services”, le titre de la 3e colonne présente une faute d’orthographe.
+Résultat actuel:
+
+“Exprience digitale”
+
+!image-20251024-085221.png|width=281,alt=""image-20251024-085221.png""!
+
+Résultat attendu:
+
+Expérience digitale",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 10:52 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-085221.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10035,,,0|i0000n:,,,,,,,A faire,24/oct./25 10:51 AM
+(World eco forum) Envoi du formulaire non fonctionnel,SCRUM-3,10066,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Highest,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,24/oct./25 10:12 AM,31/oct./25 11:46 AM,21/nov./25 12:16 PM,,,0,"Sur la page d'événement “World economic forum” (après avoir cliqué sur le 3e image du slider de l’accueil).
+
+
+
+Résultat actuel:
+
+Après avoir complété le formulaire, le bouton Envoyer n’a aucun effet, et on retrouve une erreur 400 dans la console.
+
+!image-20251024-084341.png|width=281,alt=""image-20251024-084341.png""!
+
+Et voici ce que le test swagger retourne lorsqu’on essaie le POST sur /inscription/:
+
+!image-20251024-084630.png|width=281,alt=""image-20251024-084630.png""!
+
+Résultat attendu: avoir un message de confirmation d’envoi de formulaire",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,24/oct./25 10:47 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-084341.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10033,24/oct./25 10:47 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251024-084630.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10034,,0|i0000f:,,,,,,,A faire,24/oct./25 10:12 AM
+(Conférence) Faute d'orthographe sur prestation,SCRUM-2,10033,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,Low,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,17/oct./25 1:35 PM,17/oct./25 1:38 PM,21/nov./25 12:16 PM,,,0,"Sur la page de l’événement “conférence”, sur la liste des prestations proposées
+
+!image-20251017-113538.png|width=281,alt=""image-20251017-113538.png""!
+
+Résultat actuel: “1 scéne principale”
+Résultat attendu : “1 scène principale”",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,17/oct./25 1:37 PM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251017-113538.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10000,,,0|i00007:,,,,,,,A faire,17/oct./25 1:35 PM
+(Accueil) Défilement des images du slider,SCRUM-1,10000,Bug,À faire,SCRUM,Projet5-OC,software,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Your first project,High,,,,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,10/oct./25 10:36 AM,31/oct./25 11:13 AM,21/nov./25 12:14 PM,,,0,"Sur la page d’accueil du site, le slider à 3 images ne recycle pas directement sur la 1ere image après être passé sur la 3e image. Laissant un espace blanc le temps d’un cycle.
+
+Résultat actuel, après la 3e image du carrousel:
+
+!image-20251017-113005.png|width=281,alt=""image-20251017-113005.png""!
+
+Résultat attendu: que le carrousel retourne directement sur la première image après la 3e, sans passer par une étape de blanc.",,Cédric Chung,70121:98c62f4a-61d6-4d22-ae77-8659fb69650e,,,,,,,,,31/oct./25 11:13 AM;4e21ad5f-2303-412b-8e50-9c8167177c9f;image-20251017-113005.png;https://syman77680-oc.atlassian.net/rest/api/3/attachment/content/10066,,,0|hzzzzz:,,,,,,,A faire,10/oct./25 10:36 AM
